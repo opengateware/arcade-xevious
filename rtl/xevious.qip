@@ -1,0 +1,28 @@
+# ==============================================================================
+# RTL
+# ==============================================================================
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "xevious.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "dpram.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "gen_ram.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "gen_video.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "sound_machine.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "sound_lpf.vhd"]
+
+# ==============================================================================
+# PROM
+# ==============================================================================
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "prom/bg_palette_lsb.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "prom/bg_palette_msb.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "prom/blue.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "prom/green.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "prom/red.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "prom/sound_samples.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "prom/sound_seq.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "prom/sp_palette_lsb.vhd"]
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "prom/sp_palette_msb.vhd"]
+
+# ==============================================================================
+# MODULES
+# ==============================================================================
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) "../modules/cpu-t80/index.qip"]
+set_global_assignment -name QIP_FILE [file join $::quartus(qip_path) "../modules/cpu-mb88xx/index.qip"]

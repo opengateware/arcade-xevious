@@ -1,0 +1,37 @@
+{
+    "name": "xevious",
+    "displayName": "xevious",
+    "description": "Namco Xevious Compatible Gateware IP Core for FPGA",
+    "author": "boogermann",
+    "version": "0.1.0",
+    "license": "GPL-3.0-or-later",
+    "repository": "https://github.com/opengateware/arcade-xevious",
+    "keywords": [
+        "namco",
+        "xevious",
+        "vertical",
+        "arcade",
+        "1983",
+        "ecosystem:raetro",
+        "ecosystem:gateman"
+    ],
+    "scripts": {
+        "verilator": "echo \"Error: no simulation specified\" && exit 1"
+    },
+    "hardware": {
+        "id": "xevious",
+        "name": "Xevious",
+        "year": 1983,
+        "manufacturer": "Namco"
+    },
+    "platforms": {
+        "pocket": "1.1.0"
+    },
+    "modules": {
+        "cpu-mb88xx": "0.3.0",
+        "cpu-t80": "2.4.2",
+        "pocket-dataloader": "1.0.0",
+        "pocket-i2s": "1.0.0",
+        "pocket-joypad": "1.0.0"
+    }
+}
